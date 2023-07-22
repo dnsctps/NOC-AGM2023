@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #AED8CC;
+    /* color: #fff; */
+    /* line-height: 1.6; */
+    overflow-x: hidden;
+    
+}
+
+.flex-container1{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 10px;
+    line-height: 40px;
+    
+}
+
+.flex-container1 #item-1 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+   
+}
+
+
+.flex-container2{
+    /* border: 1px solid green; */
+    display: flex;
+   text-align: center;
+   height: 500px;
+}
+
+.flex-container2 .box2{
+    flex: 1;
+    flex-basis: 100%;
+    border: 1px solid white;
+}
+
+
+
+.flex-container3 h2{
+text-align: center;
+font-family: "Sofia", sans-serif;
+font-size: 40px;
+}
+
+
+
+/* bubbbles */
+
+/* Bubble animation */
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    
+}
+
+.bubbles{
+    position: absolute;
+    display: flex;
+    
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc ;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 55s linear infinite ;
+    animation-duration: calc(45s / var(--i));  
+   
+    /* animation-iteration-count: 2; */ 
+    opacity: 0.8;
+}
+
+ .bubbles span:nth-child(even)
+{
+    background: #ff2d75 ;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+} 
+
+
+ @keyframes animate{
+   100%{
+        transform: translateY(100vh) scale(0);
+    }
+
+    0%{
+        transform: translateY(-10vh) scale(1);
+    } 
+} 

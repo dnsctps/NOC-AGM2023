@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1500px) {
+
+    .flex-container1{
+        /* border: 1px solid red; */
+        
+        
+    }
+    
+    .flex-container1 #item-1 h1{
+        
+        font-size: 22px;
+    }
+    .flex-container1 #item-1 h2{
+        
+        font-size: 18px;
+    }
+    
+    
+    .flex-container2{
+        border: 1px solid green;
+        flex-direction: column;
+       height: 950px;
+    }
+    
+   
+    
+    
+    .flex-container3 h2{
+    
+    font-size: 30px;
+    }
+    
+
+
+
+
+
+
+}
